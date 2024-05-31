@@ -1,0 +1,236 @@
+@media screen and (min-width: 320px) and (max-width:767px){
+    .carousel-caption > h2{
+        font-size: 13pt;
+    }
+    .carousel-caption {
+        top: 15%;
+    }
+    .carousel-caption p {
+        font-size: 10pt;
+    }
+}
+
+@font-face{
+    font-family: "OpenSans-Light";
+    src: url(../source/fonts/OpenSans-Light.ttf) format("truetype");
+}
+.feturedsection>h1{
+    font-family: "OpenSans-Light";
+    font-size: 41px;
+    padding-top: 46px;
+    padding-bottom: 50px;
+    color: #020243;
+}
+
+.carstxt{
+    padding-left: 45px;
+    padding-right: 88px;
+}
+.bdots{
+    padding-right: 40px;
+}
+.row{
+    padding: 0px;
+    margin: 0px;
+
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+    .feturedsection>h1{
+        font-size: 15pt;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+    }
+    .bdots{
+        padding-right: 15px;
+    }
+    .carstxt{
+        padding-left: 20px;
+        padding-right: 15px;
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 640px){
+    .feturedsection>h1{
+        font-size: 20pt;
+    }
+    .bdots{
+        padding-right: 20px;
+    }
+    .carstxt{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.img1colon{
+    max-width:46.3%;
+}
+.img1colon>img{
+
+    width: 100%;
+
+}
+.costumrow{
+    border-top: 1px solid #BABABA;
+    border-bottom: 1px solid #BABABA;
+}
+.txt1colon{
+    width: 53.7%;
+}
+.featurecontant{
+    width:85%;
+    height: auto;
+    border: 1px solid #C59E47;
+    margin-top: 7%;
+
+    margin-right: auto;
+    margin-left: auto;
+
+}
+.featurecontant>h1{
+    font-family: "OpenSans Regular";
+    font-size: 19.8px;
+    text-align: center;
+    color: #5B5B5B;
+    margin-top:14%;
+    margin-bottom: 8px;
+
+}
+.featurecontant>p{
+    font-family: "OpenSans Regular";
+    font-size: 11.44px;
+    text-align: center;
+    color: #5B5B5B;
+}
+.featurecontant>h2{
+    font-family: "OpenSans Regular";
+    font-size: 12.41pt;
+    color: #F8C72D;
+    text-align: center;
+    letter-spacing: 8px;
+    margin-top: 36%;
+    margin-bottom: 19px;
+}
+.featurecontant>button{
+    background: #F8C72D;
+    border: 1px solid #F8C72D;
+    font-family: "OpenSans Regular";
+    font-size: 19px;
+    color:#fff;
+    letter-spacing: 5px;
+    width: 68%;
+    margin-left: 17%;
+    margin-bottom: 26px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.featurecontant>button:hover{
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    transition: all .2s ease-in;
+    border: 1px solid #F8C72D;
+    background: none;
+    color: #F8C72D;
+}
+
+
+.img2colon{
+    padding: 0px!important;
+    margin: 0px!important;
+    max-width:46.3%;
+
+}
+.img2colon>img{
+    width: 100%;
+}
+#readmore{
+    overflow-y: auto;
+    position: absolute;
+    background-color: #fff;
+    top:0px;
+    margin-top: 30px;
+    height: 0px;
+    max-width: 290px;
+}
+#readmore>h1{
+    text-align: center;
+    font-family: "OpenSans Regular";
+    color: #5B5B5B;
+    font-size: 19.8px;
+}
+#readmore>p{
+    font-family: "OpenSans Regular";
+    font-size: 11.44px;
+    text-align: center;
+    color: #5B5B5B;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+#readmore>button{
+    background: none;
+    border: 1px solid #F8C72D;
+    font-family: "OpenSans Regular";
+    font-size: 19px;
+    color:#F8C72D;
+    letter-spacing: 5px;
+    width: 70%;
+    margin-left: 17%;
+    margin-bottom: 26px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#readmore>button:hover{
+    background: #F8C72D;
+    color: #fff;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+#readmore2{
+    overflow-y: auto;
+    position: absolute;
+    background-color: #fff;
+    top:0px;
+    margin-top: 30px;
+    height: 0px;
+    max-width: 290px;
+}
+#readmore2>h1{
+    text-align: center;
+    font-family: "OpenSans Regular";
+    color: #5B5B5B;
+    font-size: 19.8px;
+}
+#readmore2>p{
+    font-family: "OpenSans Regular";
+    font-size: 11.44px;
+    text-align: center;
+    color: #5B5B5B;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+#readmore2>button{
+    background: none;
+    border: 1px solid #F8C72D;
+    font-family: "OpenSans Regular";
+    font-size: 19px;
+    color:#F8C72D;
+    letter-spacing: 5px;
+    width: 68%;
+    margin-left: 17%;
+    margin-bottom: 26px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#readmore2>button:hover{
+    background: #F8C72D;
+    color: #fff;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}

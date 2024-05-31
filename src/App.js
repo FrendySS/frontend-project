@@ -1,33 +1,36 @@
+import React from "react";
 import './App.css';
-import './style/mystyle.css';
-import Header from './components/header.js';
-import Footer from './components/footer.js';
-import HomePage from './components/homePage.js';
-import ContactPage from './components/contactPage.js';
-import CatalogPage from './components/catalog.js';
-import AboutUsPage from "./components/aboutUs.js";
-import { Route, Routes } from 'react-router-dom';
 
-const App = () => (
-    <div className="body">
-        <div className="navbar">
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                <Header />
-            </nav>
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Header from "./components/header.js";
+import Footer from './components/footer.js';
+import AboutUs from "./components/aboutUs.js";
+import Catalog from "./components/catalog.js";
+import ContactPage from "./components/contactPage.js";
+import HomePage from "./components/homePage.js";
+import CarInfoPage from "./components/carInfoPage";
+
+function App() {
+    return (
+        <Router>
+        <div className="Header">
+                <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <Header />
+                </nav>
+        </div>
+        <div className="HomePage">
             <Routes>
-                <Route path="/" element={<HomePage />} />
-                <Route path="/about" element={<AboutUsPage />} />
-                <Route path="/catalog" element={<CatalogPage />} />
-                <Route path="/contact" element={<ContactPage />} />
+                <Route path="/HomePage" exact component={HomePage} />
+                <Route path="/AboutUs" component={AboutUs} />
+                <Route path="/ContactPage" component={ContactPage} />
+                <Route path="/Catalog" component={Catalog} />
             </Routes>
         </div>
-        <div className="main">
-
+        <div className="Footer">
+            <CarInfoPage/>
         </div>
-        <div className="footer">
-            <Footer />
-        </div>
-    </div>
-);
+        </Router>
+    );
+}
 
 export default App;

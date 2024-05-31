@@ -1,7 +1,6 @@
 import React from 'react';
-import '../style/mystyle.css';
 
-const AboutUsPage = () => {
+function AboutUsPage() {
 	return(
 		<div></div>
 	);

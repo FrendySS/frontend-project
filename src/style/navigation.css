@@ -1,0 +1,143 @@
+.logo {
+    position: absolute;
+    top: 0;
+    padding-top: 9px;
+    width: 10px;
+    height: 5px;
+    z-index: 999;
+    transform: scale(0.5);
+}
+
+.row {
+    padding: 0;
+    margin: 0;
+}
+
+.topnav {
+    background: none;
+}
+
+.topnav .container {
+    margin-left: 107px !important;
+}
+
+.toggle-costume {
+    float: right;
+}
+
+#navbarontop {
+    padding-left: 180px;
+    padding-top: 26px;
+    height: 80px;
+}
+
+#navbarontop > li > a {
+    font-family: 'BebasNeue Regular';
+    font-size: 13pt;
+    color: #313943;
+    padding-top: 5px;
+    padding-bottom: 6px;
+    margin-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 10px !important;
+    margin-left: 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+}
+
+#navbarontop > li > a:hover {
+    background: none !important;
+    border-bottom: 2px solid #C59E47;
+}
+
+#navbarontop > button {
+    background: none;
+    border: 2px solid #C59E47;
+    font-family: 'BebasNeue Regular';
+    margin-left: 50px;
+    font-size: 16.99px;
+    color: #313943;
+    padding-left: 19px;
+    padding-right: 19px;
+    padding-top: -2px;
+    padding-bottom: -2px;
+}
+
+#navbarontop > button:hover {
+    background-color: #C59E47;
+    color: #fff;
+}
+
+.dropdowncostume {
+    margin-left: 0;
+}
+
+.navbar-default .toggle-costume:hover,
+.navbar-default .toggle-costume:focus {
+    background-color: #000;
+}
+
+.navbar-default .toggle-costume.icon-bar {
+    background-color: #fff;
+}
+
+.navbar-default .toggle-costume:hover .icon-bar {
+    background-color: #fff;
+}
+
+#navbarontop .open > a,
+#navbarontop .open > a:hover,
+#navbarontop .open > a:focus {
+    border-color: #C59E47;
+}
+
+#navbarontop a:focus {
+    outline: none;
+    border-bottom: 2px solid #C59E47;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    font-family: 'BebasNeue Regular';
+    font-size: 13pt;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+    background-color: #fff;
+}
+
+.topnavbar .container{
+    margin-left: 10px !important;
+}
+.logo{
+    position: absolute;
+    top:0px;
+    padding-top: 9px;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+}
+.toggle-costume{
+    float: right;
+}
+
+.logo{
+    position: absolute;
+    top:10px;
+    padding-top: 10px;
+    -webkit-transform: scale(0.77);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -o-transform: scale(0.7);
+    transform: scale(0.6);
+}
+
+.maincontainer{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    margin-left: 250px;
+}

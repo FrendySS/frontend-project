@@ -1,33 +1,25 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import '../style/mystyle.css';
+import '../style/navigation.css';
+import logo from '../image/logo.png';
 
-const Header = () => {
-    return (
-        <div className="allcontain">
-            <nav className="topnavbar navbar-default topnav">
+function  Header(){
+    return(
+        <div className="maincontainer">
                 <div className="container">
                     <div className="navbar-header">
-                        <div className="navbar-brand logo">
-                            <img src="../image/logo.png" alt="logo" />
-                        </div>
+                        <a className="navbar-brand logo" href="/HomePage">
+                            <img src={logo} alt="logo"/>
+                        </a>
                     </div>
                 </div>
-                <div className="collapse navbar-collapse" id="upmenu">
+            <div className="collapse navbar-collapse" id="upmenu">
                     <ul className="nav navbar-nav" id="navbarontop">
-                        <li className="active"><Link to="/">HOME</Link></li>
-                        <li className="dropdown">
-                            <Link to="/catalog" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CATALOG</Link>
-                        </li>
-                        <li className="dropdown">
-                            <Link to="/about" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT US</Link>
-                        </li>
-                        <li>
-                            <Link to="/contact">CONTACT</Link>
-                        </li>
+                        <li className="active"><a href="/HomePage">HOME</a></li>
+                        <li className="active"><a href="/Catalog">CATALOG</a></li>
+                        <li className="active"><a href="/AboutUs">ABOUT US</a></li>
+                        <li><a href="/ContactPage">CONTACT</a></li>
                     </ul>
                 </div>
-            </nav>
         </div>
     );
 }

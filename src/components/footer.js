@@ -1,20 +1,23 @@
 import React from 'react';
-import '../style/mystyle.css';
-const Footer = () => {
+import "../style/footer.css";
+import newsimage from '../image/patrik-storm-alstra-pictures-5RSqU21ia7Q-unsplash.jpg';
+import border from "../image/border.png";
+
+
+function Footer (){
     return(
     <div id="Footer">
-        <footer class="footer">
+        <footer className="footer">
             <div className="newslettercontent">
                 <div className="leftside">
-                    <img src="image/border.png" alt="border"/>
+                    <img src={border} alt="border"/>
                     <h1>NEWSLETTER</h1>
                     <p>Subscribe to the COLLECTIONCARS mailing list to <br/>
                         receive updates on new arrivals, special offers <br/>
                         and other discount information.</p>
                 </div>
                 <div className="rightside">
-                    <img className="newsimage" src="image/patrik-storm-alstra-pictures-5RSqU21ia7Q-unsplash.jpg"
-                         alt="newsletter"/>
+                    <img src={newsimage} alt="newsletter"/>
                     <input type="text" className="form-control" id="subemail" placeholder="EMAIL"/>
                     <button>SUBSCRIBE</button>
                 </div>
@@ -49,9 +52,9 @@ const Footer = () => {
                     <div className="footer-col">
                         <h4>social media</h4>
                         <div className="social-links">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i className="fab fa-facebook-f"></i></a>
+                            <a href="#"><i className="fab fa-twitter"></i></a>
+                            <a href="#"><i className="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
