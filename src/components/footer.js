@@ -8,20 +8,6 @@ function Footer (){
     return(
     <div id="Footer">
         <footer className="footer">
-            <div className="newslettercontent">
-                <div className="leftside">
-                    <img src={border} alt="border"/>
-                    <h1>NEWSLETTER</h1>
-                    <p>Subscribe to the COLLECTIONCARS mailing list to <br/>
-                        receive updates on new arrivals, special offers <br/>
-                        and other discount information.</p>
-                </div>
-                <div className="rightside">
-                    <img src={newsimage} alt="newsletter"/>
-                    <input type="text" className="form-control" id="subemail" placeholder="EMAIL"/>
-                    <button>SUBSCRIBE</button>
-                </div>
-            </div>
             <div className="confoot">
                 <div className="rowfoot">
                     <div className="footer-col">

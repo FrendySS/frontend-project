@@ -1,35 +1,33 @@
 import React from "react";
 import './App.css';
-
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Header from "./components/header.js";
-import Footer from './components/footer.js';
-import AboutUs from "./components/aboutUs.js";
-import Catalog from "./components/catalog.js";
-import ContactPage from "./components/contactPage.js";
-import HomePage from "./components/homePage.js";
-import CarInfoPage from "./components/carInfoPage";
+import { Route, Routes, } from 'react-router-dom';
+import Header from "./components/header";
+import HomePage from "./components/homePage";
+import CatalogPage from "./components/catalog";
+import AboutUs from "./components/aboutUs";
+import ContactPage from "./components/contactPage";
+import Footer from "./components/footer";
 
 function App() {
     return (
-        <Router>
-        <div className="Header">
-                <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <Header />
-                </nav>
-        </div>
-        <div className="HomePage">
+        <>
+            <div className="Header">
+                    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                <Header />
+                    </nav>
+            </div>
             <Routes>
-                <Route path="/HomePage" exact component={HomePage} />
-                <Route path="/AboutUs" component={AboutUs} />
-                <Route path="/ContactPage" component={ContactPage} />
-                <Route path="/Catalog" component={Catalog} />
+                <Route path="/homepage" element={<HomePage />} />
+                <Route path="/catalog" element={<CatalogPage />} />
+                <Route path="/aboutUs" element={<AboutUs />} />
+                <Route path="/contactpage" element={<ContactPage />} />
             </Routes>
-        </div>
-        <div className="Footer">
-            <CarInfoPage/>
-        </div>
-        </Router>
+            <div className="HomePage">
+            </div>
+            <div className="Footer">
+                <Footer />
+            </div>
+        </>
     );
 }
 

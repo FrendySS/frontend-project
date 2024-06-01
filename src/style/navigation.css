@@ -1,11 +1,13 @@
 .logo {
     position: absolute;
-    top: 0;
-    padding-top: 9px;
-    width: 10px;
-    height: 5px;
+    top: 10px;
+    padding-top: 100px;
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -o-transform: scale(0.7);
+    transform: scale(0.7);
     z-index: 999;
-    transform: scale(0.5);
 }
 
 .row {
@@ -18,7 +20,10 @@
 }
 
 .topnav .container {
-    margin-left: 107px !important;
+    display: flex;
+    justify-content: center; /* Центрирование элементов по горизонтали */
+    align-items: center;
+    margin-left: 10px !important;
 }
 
 .toggle-costume {
@@ -29,6 +34,14 @@
     padding-left: 180px;
     padding-top: 26px;
     height: 80px;
+    display: flex;
+    justify-content: center; /* Центрирование элементов по горизонтали */
+    align-items: center;
+    list-style: none;
+}
+
+#navbarontop > li {
+    margin: 0 10px; /* Промежуток между пунктами меню */
 }
 
 #navbarontop > li > a {
@@ -38,8 +51,6 @@
     padding-top: 5px;
     padding-bottom: 6px;
     margin-bottom: 10px;
-    padding-left: 50px;
-    padding-right: 10px !important;
     margin-left: 0;
     border-bottom: 2px solid rgba(0, 0, 0, 0);
 }
@@ -55,7 +66,7 @@
     font-family: 'BebasNeue Regular';
     margin-left: 50px;
     font-size: 16.99px;
-    color: #313943;
+    color: #161c1e;
     padding-left: 19px;
     padding-right: 19px;
     padding-top: -2px;
@@ -99,7 +110,7 @@
     font-family: 'BebasNeue Regular';
     font-size: 13pt;
     color: #000;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0);
     text-align: center;
 }
 
@@ -107,35 +118,7 @@
     background-color: #fff;
 }
 
-.topnavbar .container{
-    margin-left: 10px !important;
-}
-.logo{
-    position: absolute;
-    top:0px;
-    padding-top: 9px;
-    -webkit-transform: scale(0.5);
-    -moz-transform: scale(0.5);
-    -ms-transform: scale(0.5);
-    -o-transform: scale(0.5);
-    transform: scale(0.5);
-}
-.toggle-costume{
-    float: right;
-}
-
-.logo{
-    position: absolute;
-    top:10px;
-    padding-top: 10px;
-    -webkit-transform: scale(0.77);
-    -moz-transform: scale(0.7);
-    -ms-transform: scale(0.7);
-    -o-transform: scale(0.7);
-    transform: scale(0.6);
-}
-
-.maincontainer{
+.maincontainer {
     display: inline;
     justify-content: center;
     align-items: center;
