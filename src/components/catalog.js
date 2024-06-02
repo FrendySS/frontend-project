@@ -1,3 +1,4 @@
+// src/components/CatalogPage.js
 import React from 'react';
 import { cars } from '../database/dataBase.js';
 import "../source/font-awesome-4.5.0/css/font-awesome.css";
@@ -10,7 +11,7 @@ const CatalogPage = () => {
         <div className="allcontain">
             <div className="row">
                 {cars.map(Car => (
-                    <div key={Car.name} className="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <div key={Car.id} className="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                         <div className="txthover">
                             <img src={Car.image} alt={Car.name} className="cars1 img-fluid" />
                             <div className="txtcontent">

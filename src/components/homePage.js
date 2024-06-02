@@ -27,25 +27,25 @@ function HomePage(){
                     <div className="item active">
                         <img src={mazda} alt="mazda"/>
                         <div className="carousel-caption">
-                            <h2>Chporik showroom</h2>
-                            <p>Welcome to my JDM cars showroom. Find a car to your liking and let me know in the contact
-                                list if you want to buy.</p>
+                            <h2>HACARZ DEALERSHIP</h2>
+                            <p>Welcome to my JDM cars showroom. Find a car to your liking and let us know in the contact
+                                list what you want to buy.</p>
                         </div>
                     </div>
                     <div className="item">
                         <img src={nissan350z} alt="nissan350z"/>
                         <div className="carousel-caption">
-                            <h2>Chporik showroom</h2>
-                            <p>Welcome to my JDM cars showroom. Find a car to your liking and let me know in the contact
-                                list if you want to buy.</p>
+                            <h2>HACARZ DEALERSHIP</h2>
+                            <p>Welcome to our JDM cars showroom. Find a car to your liking and let us know in the contact
+                                list what you want to buy.</p>
                         </div>
                     </div>
                     <div className="item">
                         <img src={silviaS13} alt="silvia"/>
                         <div className="carousel-caption">
-                            <h2>Chporik showroom</h2>
-                            <p>Welcome to my JDM cars showroom. Find a car to your liking and let me know in the contact
-                                list if you want to buy.</p>
+                            <h2>HACARZ DEALERSHIP</h2>
+                            <p>Welcome to our JDM cars showroom. Find a car to your liking and let us know in the contact
+                                list what you want to buy.</p>
                         </div>
                         <div className="newslettercontent">
                             <div className="leftside">

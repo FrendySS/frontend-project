@@ -75,8 +75,8 @@
 }
 
 #navbarontop > button:hover {
-    background-color: #C59E47;
-    color: #fff;
+    background-color: #000000;
+    color: #000000;
 }
 
 .dropdowncostume {
@@ -89,11 +89,11 @@
 }
 
 .navbar-default .toggle-costume.icon-bar {
-    background-color: #fff;
+    background-color: #000000;
 }
 
 .navbar-default .toggle-costume:hover .icon-bar {
-    background-color: #fff;
+    background-color: #000000;
 }
 
 #navbarontop .open > a,
@@ -116,7 +116,7 @@
 }
 
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
-    background-color: #fff;
+    background-color: #000000;
 }
 
 .maincontainer {

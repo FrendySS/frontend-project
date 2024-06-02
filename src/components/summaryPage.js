@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import '../style/SummaryPage.css';
 
 function SummaryPage() {
     const [messages, setMessages] = useState([]);

@@ -1,26 +1,142 @@
-/* src/styles/carinfo.css */
-.car-detail {
-    padding: 20px;
-    text-align: center;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.car-detail img {
-    width: 100%;
+.carInfoContainer {
+    max-width: 1300px;
+    display: block;
+    flex-direction: column;
+    margin: 20px;
+    padding-left: 200px;
+}
+
+.info-block, .description-block, .images-block {
+    margin: 20px 0;
+}
+
+.info-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.info-text {
+    width: 50%;
+    font-size: 25px;
+}
+
+.info-image {
+    padding-left: 50px;
     max-width: 600px;
-    margin: 20px auto;
 }
 
-.car-detail h1 {
+.infoImage {
+    border: #FFFFFF;
+    border-radius: 24px;
+    width: 400px;
+}
+
+.description-block {
+    width: 950px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    font-size: 24px;
+    margin: 20px;
+    padding-top: 40px;
+    padding-left: 100px;
+}
+
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 10px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-item.large {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.gallery-item.medium {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.gallery-item.small {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+
+.details {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: cente;
+}
+
+.order {
     font-size: 2.5em;
-    margin-bottom: 20px;
+    margin: 10px;
+    padding-right: 10px;
 }
 
-.car-detail p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
+.button {
+    text-decoration: none;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #000000;
+    background-color: transparent;
+    display: inline-block;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 16px; /* можно настроить под свои нужды */
+    text-align: center;
+    cursor: pointer;
 }
 
-.car-detail h4 {
-    font-size: 1.8em;
-    color: green;
+.button:hover {
+    background-color: #F8C72D;
+    color: #000000;
+    text-decoration: none;
 }
+
+.button a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.button a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+

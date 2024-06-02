@@ -8,17 +8,21 @@ import Aibek from '../image/Aibek.jpg';
 import Tashmit from '../image/Tashmit.jpg'
 import Oraz from '../image/Oraz.jpg'
 
+import subaruBRZ from "../image/subaru.jpg";
+import nissan350z from '../image/nissan350z.jpg';
+import silviaS13 from '../image/silviaS13.jpg';
+
 const images = [
-	'https://via.placeholder.com/800x400?text=Image+1',
-	'https://via.placeholder.com/800x400?text=Image+2',
-	'https://via.placeholder.com/800x400?text=Image+3',
+	subaruBRZ,
+	silviaS13,
+	nissan350z,
 ];
 
 const cards = [
 	{
 		image: Aibek,
 		title: 'Aibek',
-		description: 'au mau',
+		description: 'ХОРОШИЙ РУЛЬ "ЛЕВЫМ" НЕ НАЗОВУТ.',
 	},
 	{
 		image: Tashmit,
@@ -28,7 +32,7 @@ const cards = [
 	{
 		image: Oraz,
 		title: 'Oraz',
-		description: 'Innovation, customer satisfaction, and integrity are at the core of everything we do.',
+		description: 'ДЕЛАЙ КАК НАДО. КАК НЕ НАДО НЕ ДЕЛАЙ.',
 	},
 ];
 

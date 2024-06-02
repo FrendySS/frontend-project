@@ -25,7 +25,7 @@ function App() {
                 <Route path="/aboutUs" element={<AboutUs />} />
                 <Route path="/contactpage" element={<ContactPage setContactData={setContactData} />} />
                 <Route path="/summary" element={<SummaryPage contactData={contactData} />} />
-                <Route path="/carinfopage/:id" component={CarInfoPage} />
+                <Route path="/carinfopage/:id" element={<CarInfoPage />} />
             </Routes>
             <div className="HomePage">
             </div>
