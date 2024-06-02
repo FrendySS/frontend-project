@@ -45,6 +45,7 @@
 }
 
 #navbarontop > li > a {
+    text-decoration: none;
     font-family: 'BebasNeue Regular';
     font-size: 13pt;
     color: #313943;

@@ -1,8 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "../style/base.css";
 import "../style/carousel.css";
 import "../style/slider.css";
 import "../source/bootstrap-3.3.6-dist/css/bootstrap.css";
+import "../style/features.css";
+import "../style/favones.css";
 import mazda from '../image/mazda.jpg';
 import nissan350z from '../image/nissan350z.jpg';
 import silviaS13 from '../image/silviaS13.jpg';
@@ -10,6 +12,14 @@ import border from "../image/border.png";
 import newsimage from "../image/patrik-storm-alstra-pictures-5RSqU21ia7Q-unsplash.jpg";
 
 function HomePage(){
+    const [readMore, setReadMore] = useState({ RX7: false, Skyline: false });
+
+    const toggleReadMore = (car) => {
+        setReadMore(prevState => ({
+            ...prevState,
+            [car]: !prevState[car]
+        }));
+    };
     return (
         <div className="allcontain">
             <div id="carousel-up" className="carousel slide" data-ride="carousel">

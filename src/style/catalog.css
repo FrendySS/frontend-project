@@ -1,110 +1,232 @@
-.txtcontent{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.allcontain {
+    max-width: 1350px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px; /* Add some padding for better layout */
+}
+
+@font-face {
+    font-family: "OpenSans-Light";
+    src: url(../source/fonts/OpenSans-Light.ttf) format("truetype");
+}
+
+.feturedsection > h1 {
+    font-family: "OpenSans-Light";
+    font-size: 30px;
+    padding-top: 46px;
+    padding-bottom: 50px;
+    color: #020243;
+}
+
+.carstxt {
+    padding-left: 45px;
+    padding-right: 88px;
+}
+
+.bdots {
+    padding-right: 40px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    gap: 20px; /* Add gap between columns */
+}
+
+.col-xs-12,
+.col-sm-6,
+.col-md-4,
+.col-lg-3 {
+    flex: 1 1 calc(25% - 20px); /* Adjust the flex basis to include the gap */
+    max-width: calc(25% - 20px);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Add margin-bottom for spacing */
+}
+
+.txthover {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    overflow: hidden; /* Ensure the image is contained within the div */
+    max-width: 300px; /* Ensure a maximum width for images */
+    height: 200px; /* Fixed height to ensure cropping */
+}
+
+.txthover:hover {
+    transform: scale(1.05);
+}
+
+.cars1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the div */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.txtcontent {
     position: absolute;
-    top:0px;
-    left:0px;
-    background: rgba(12,12,12,.7);
+    top: 0;
+    left: 0;
+    background: rgba(12, 12, 12, 0.7);
     width: 100%;
     height: 100%;
     opacity: 0;
-    -webkit-transition: opacity 500ms;
-    -moz-transition: opacity 500ms;
-    -o-transition: opacity 500ms;
     transition: opacity 500ms;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.stars{
-    font-size: 7px;
-    padding-top: 57px;
-    padding-bottom: 12px;
-    text-align: center;
-    border-bottom: 2px solid #F6F6FB;
-    margin-left:58px;
-    margin-right: 58px;
-    color: #F6F6FB;
 
+.txtcontent:hover {
+    opacity: 1;
 }
-.simpletxt{
+
+.stars,
+.stars2 {
+    font-size: 7px;
+    padding: 10px 0;
     text-align: center;
-    border-top: 1px solid #F6F6FB;
-    border-bottom: 1px solid #F6F6FB;
-    margin-top: 2px;
-    margin-left: 58px;
-    margin-right: 58px;
-    padding-top: 40px;
+    color: #F6F6FB;
 }
-.simpletxt>h3{
+
+.stars {
+    border-bottom: 2px solid #F6F6FB;
+}
+
+.stars2 {
+    border-top: 2px solid #F6F6FB;
+}
+
+.simpletxt {
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.simpletxt > h3 {
     font-family: "OpenSans Semibold";
-    font-size: 13.6px;
-    color:#E7E7E7;
-    margin: 0px;
+    font-size: 14px;
+    color: #E7E7E7;
+    margin: 0;
 }
-.simpletxt>p{
+
+.simpletxt > p {
     font-family: "OpenSans Regular";
-    font-size: 11.2px;
+    font-size: 12px;
     color: #E7E7E7;
     padding-top: 7px;
 }
-.simpletxt>h4{
+
+.simpletxt > h4 {
     font-family: "OpenSans Regular";
-    font-size:11.3px;
+    font-size: 12px;
     font-weight: bold;
     text-align: center;
     color: #FFF;
-    padding-bottom: 25px;
+    padding-bottom: 10px;
 }
 
-.simpletxt>button{
+.simpletxt > button {
     text-decoration: none;
-    text-decoration-color: #FFFFFF;
     background: none;
     border: 1px solid #fff;
-    font-family:"OpenSans Regular";
+    font-family: "OpenSans Regular";
     color: #fff;
     margin-bottom: 14px;
+    padding: 5px 10px; /* Add padding for better appearance */
 }
 
-.wishtxt{
+.wishtxt {
     padding-bottom: 42px;
 }
 
-.wishtxt .paragraph1{
+.wishtxt .paragraph1,
+.wishtxt .paragraph2 {
     font-family: "OpenSans Regular";
-    font-size:11.32px;
+    font-size: 12px;
     color: #fff;
-    float: left;
-
-
 }
-.wishtxt .paragraph2{
-    font-family: "OpenSans Regular";
-    font-size: 11.32px;
-    color: #fff;
+
+.wishtxt .paragraph1 {
+    float: left;
+}
+
+.wishtxt .paragraph2 {
     float: right;
 }
-.stars2{
-    font-size: 7px;
-    padding-top: 10px;
-    margin-top: 2px;
-    text-align: center;
-    border-top: 2px solid #F6F6FB;
-    margin-left:58px;
-    margin-right: 58px;
-    color: #F6F6FB;
 
+.txthover > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the div */
+    border-radius: 8px;
 }
-.txthover>img{
-    width:100%;
 
-}
-.txthover:hover .txtcontent{
+.txthover:hover .txtcontent {
     opacity: 1;
 }
-@media screen and (min-width: 320px) and (max-width: 766px){
-    .stars{
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .feturedsection > h1 {
+        font-size: 15pt;
         padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .bdots {
+        padding-right: 15px;
+    }
+
+    .carstxt {
+        padding-left: 20px;
+        padding-right: 15px;
+    }
+
+    .simpletxt {
+        padding: 5px;
+    }
+
+    .simpletxt > h3 {
+        font-size: 12px;
+    }
+
+    .simpletxt > p {
+        font-size: 10px;
+    }
+
+    .simpletxt > h4 {
+        font-size: 10px;
     }
 }
-@media screen and (min-width: 1200px)and (max-width: 1280px){
-    .stars{
+
+@media screen and (min-width: 480px) and (max-width: 640px) {
+    .feturedsection > h1 {
+        font-size: 20pt;
+    }
+
+    .bdots {
+        padding-right: 20px;
+    }
+
+    .carstxt {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1280px) {
+    .stars {
         padding-top: 37px;
     }
 }

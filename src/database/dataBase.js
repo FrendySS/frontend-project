@@ -15,14 +15,25 @@ import car14 from "../image/car14.jpeg";
 import car15 from "../image/car15.jpeg";
 import car16 from "../image/car16.png";
 
+// nissan r34
+
+// mazda rx-7
+
+// toyota supra
+
+// honda NSX
+
+
+
 export class Car {
-    constructor(id, name, image, description, moreInfo, price) {
+    constructor(id, name, image, info, description, price, images) {
         this.id = id;
         this.name = name;
         this.image = image;
+        this.info = info;
         this.description = description;
-        this.moreInfo = moreInfo;
         this.price = price;
+        this.images = [];
     }
 }
 
@@ -33,7 +44,8 @@ export const cars = [
         car12,
         "The Nissan Skyline (Japanese: 日産・スカイライン, Hepburn: Nissan Sukairain) is a brand of automobile originally produced by the Prince Motor Company starting in 1957.",
         "",
-        10000
+        45000,
+        { }
     ),
     new Car(
         2,
@@ -41,7 +53,9 @@ export const cars = [
         car8,
         "The Mazda RX-7 is a front-engine, rear-wheel-drive, rotary engine-powered sports car that was manufactured and marketed by Mazda from 1978 until 2002 across three generations, all of which made use of a compact, lightweight Wankel rotary engine.",
         "",
-        10000
+        50000,
+        { }
+
     ),
     new Car(
         3,
@@ -49,7 +63,9 @@ export const cars = [
         car10,
         "The Toyota Supra (Japanese: トヨタ・スープラ, Hepburn: Toyota Sūpura) is a sports car and grand tourer manufactured by the Toyota Motor Corporation beginning in 1978. The name " + "supra" + "is derived from the Latin prefix, meaning " + "above" + ", " + "to surpass" + " or " + "go beyond"+ ".",
         "",
-        10000
+        41500,
+        { }
+
     ),
     new Car(
         4,
@@ -57,7 +73,9 @@ export const cars = [
         car9,
         "The Honda NSX, marketed in North America as the Acura NSX, is a two-seat, mid-engined coupe sports car manufactured by Honda. The origins of the NSX trace back to 1984, with the HP-X concept, which was a mid-engine 3.0 L V6 engine rear wheel drive sports car.",
         "",
-        23800
+        28000,
+        { }
+
     ),
     new Car(
         5,
@@ -65,7 +83,8 @@ export const cars = [
         car1,
         "The Nissa 240SX is a sport compact car that was introduced to the North American market by Nissan in 1989 for the 1990 model year.",
         "",
-        10000
+        10000,
+        { }
     ),
     new Car(
         6,
@@ -73,7 +92,8 @@ export const cars = [
         car2,
         "The Toyota 86 and the Subaru BRZ are 2+2 sports cars jointly developedby Toyota and Subaru, manufactured at Subaru's Gunma assembly plant",
         "",
-        32000
+        32000,
+        { }
     ),
     new Car(
         7,
@@ -81,7 +101,8 @@ export const cars = [
         car3,
         "The Mazda MX-5 is a lightweight two-passenger roadster sports car manufactured and marketed by Mazda with a front mid-engine, rear-wheel-drive layout.",
         "",
-        18000
+        18000,
+        { }
     ),
     new Car(
         8,
@@ -89,7 +110,8 @@ export const cars = [
         car4,
         "The AE86 series of the Toyota Corolla Levin and Toyota Sprinter Trueno are small, front-engine/rear-wheel-drive models within the front-engine/front-wheel-drive fifth generation Corolla (E80) range—marketed by Toyota from 1983 to 1987 in coupé and liftback configurations.",
         "",
-        22000
+        22000,
+        { }
     ),
     new Car(
         9,
@@ -97,7 +119,8 @@ export const cars = [
         car5,
         "The Nissan GT-R (Japanese: 日産・GT-R, Nissan GT-R), is a high-performance sports car and grand tourer produced by Nissan, unveiled in 2007.",
         "",
-        63000
+        63000,
+        { }
     ),
     new Car(
         10,
@@ -105,7 +128,8 @@ export const cars = [
         car6,
         "Japan saw a new version of the Silvia: The S15 in 1999, now boasting 250 PS at 6,400 rpm from its SR20DET Inline-four engine, thanks to a ball bearing turbocharger upgrade, as well as improved engine management system.",
         "",
-        10000
+        10000,
+        { }
     ),
     new Car(
         11,
@@ -113,7 +137,8 @@ export const cars = [
         car7,
         "The Nissan 370Z (known as the Fairlady Z Z34 in Japan) is a 2-door, 2-seater sports car (S-segment in Europe) manufactured by Nissan Motor Company.",
         "",
-        10000
+        10000,
+        { }
     ),
     new Car(
         12,

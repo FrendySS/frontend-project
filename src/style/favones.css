@@ -1,0 +1,94 @@
+/* General Styles */
+body {
+    background-color: #111; /* Dark background */
+    color: #fff; /* White text color */
+    font-family: Arial, sans-serif; /* Default font */
+}
+
+.text-center {
+    text-align: center; /* Center align text */
+}
+
+/* Title */
+h1 span.bdots {
+    margin: 0 10px; /* Add some space around the middle dots */
+}
+
+/* Rows and Columns */
+.row {
+    display: flex;
+    justify-content: space-around; /* Space out columns evenly */
+    margin-top: 30px; /* Space between rows */
+}
+
+.col-lg-6 {
+    flex: 0 0 48%; /* Set the width for large screens */
+    max-width: 48%;
+    padding: 0 10px; /* Add padding to the sides */
+}
+
+.costumcol {
+    border: 1px solid #333; /* Add border to columns */
+    padding: 20px; /* Add padding inside columns */
+    background-color: #222; /* Slightly lighter background for contrast */
+}
+
+.costumcol .row {
+    display: flex; /* Ensure inner rows are flex containers */
+}
+
+.col-xs-12, .col-sm-6, .col-md-6, .col-lg-6 {
+    flex: 0 0 48%; /* Set width for various screen sizes */
+    max-width: 48%;
+    margin: 1%; /* Add margin between images and text */
+}
+
+/* Images */
+img {
+    width: 100%; /* Full width images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Round corners */
+}
+
+/* Content */
+.featurecontant {
+    padding: 20px; /* Add padding inside content */
+}
+
+.featurecontant h1, .featurecontant p, .featurecontant h2 {
+    margin: 10px 0; /* Margin around elements */
+}
+
+.featurecontant h2 {
+    color: #ffc107; /* Price color */
+}
+
+/* Buttons */
+button {
+    background-color: #ffc107; /* Yellow background */
+    color: #000; /* Black text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding around button */
+    cursor: pointer; /* Pointer cursor */
+    margin-top: 10px; /* Space above buttons */
+}
+
+button:hover {
+    background-color: #e0a800; /* Darker yellow on hover */
+}
+
+/* Read More/Read Less Sections */
+#readmore, #readmore2 {
+    background-color: #333; /* Dark background */
+    padding: 20px; /* Add padding */
+    margin-top: 10px; /* Space above the section */
+    border-radius: 5px; /* Round corners */
+}
+
+#readmore h1, #readmore2 h1 {
+    margin-bottom: 10px; /* Space below title */
+}
+
+#readmore p, #readmore2 p {
+    margin-bottom: 20px; /* Space below text */
+}

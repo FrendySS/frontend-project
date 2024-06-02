@@ -1,9 +1,9 @@
 import React from 'react';
 import { cars } from '../database/dataBase.js';
-import "../source/font-awesome-4.5.0/css/font-awesome.css"
+import "../source/font-awesome-4.5.0/css/font-awesome.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../style/catalog.css";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const CatalogPage = () => {
     return (
@@ -20,14 +20,16 @@ const CatalogPage = () => {
                                     <div className="glyphicon glyphicon-star"></div>
                                 </div>
                                 <div className="simpletxt">
-                                    <input className="id" value={Car.id} type="hidden"/>
+                                    <input className="id" value={Car.id} type="hidden" />
                                     <h3 className="name">{Car.name}</h3>
                                     <p className="description">{Car.description}</p>
                                     <h4 className="price">{Car.price}€</h4>
-                                    <button className="button"><Link to="/carinfopage"> More info </Link></button>
+                                    <button className="button">
+                                        <Link to={`/carinfopage/${Car.id}`}>More info</Link>
+                                    </button>
                                 </div>
                                 <div className="stars2">
-                                <div className="glyphicon glyphicon-star"></div>
+                                    <div className="glyphicon glyphicon-star"></div>
                                     <div className="glyphicon glyphicon-star"></div>
                                     <div className="glyphicon glyphicon-star"></div>
                                 </div>
